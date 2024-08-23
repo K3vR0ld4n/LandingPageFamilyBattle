@@ -1,0 +1,652 @@
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4ff; /* Color azul claro */
+}
+
+/* Contenedor */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #fdd835; /* Color amarillo dorado */
+    text-decoration: none;
+}
+
+.logo span {
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.nav-cta {
+    background-color: #fdd835;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.nav-cta:hover {
+    background-color: #fbc02d; /* Un tono más oscuro del amarillo dorado */
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #e3f2fd; /* Color azul muy claro */
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.hero-text h1 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #fdd835;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #fbc02d; /* Un tono más oscuro del amarillo dorado */
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/* Sección de Introducción */
+#introduction {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.intro-text h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.intro-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-secondary {
+    background-color: #1a237e; /* Color azul oscuro */
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #0d1a5e; /* Un tono más oscuro del azul */
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+/* Sección Cómo Jugar */
+#how-it-works {
+    background-color: #f0f4ff; /* Color azul claro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+#how-it-works h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.step {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.step img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.step p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Sección de Características */
+#features {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+#features h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Sección de Temas */
+#themes {
+    background-color: #f0f4ff; /* Color azul claro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#themes h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+#themes h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+#themes p {
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.themes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.theme-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.theme-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.theme-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.theme-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Sección Demo AR */
+#ar-demo {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.ar-demo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ar-demo-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.ar-demo-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ar-demo-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Sección de Testimonios */
+#testimonials {
+    background-color: #f0f4ff; /* Color azul claro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+#testimonials h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.testimonial-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-item p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #333;
+    font-style: italic;
+}
+
+.testimonial-item h4 {
+    font-size: 1em;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+/* Sección de Precios */
+#pricing {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#pricing h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+#pricing h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.pricing-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pricing-item {
+    background-color: #f0f4ff; /* Color azul claro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pricing-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+.pricing-item p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-item ul {
+    list-style: none;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.pricing-item ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.pricing-item ul li:before {
+    content: "✔";
+    color: #fdd835; /* Color amarillo dorado */
+    position: absolute;
+    left: 0;
+}
+
+.price {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+/* Sección FAQ */
+#faq {
+    background-color: #f0f4ff; /* Color azul claro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#faq h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #1a237e; /* Color azul oscuro */
+}
+
+#faq h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #f0f4ff; /* Color azul claro */
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-answer {
+    padding: 0 20px 20px;
+    display: none;
+    background-color: #ffffff;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(45deg);
+}
+
+/* Sección Final CTA */
+#final-cta {
+    background-color: #1a237e; /* Color azul oscuro */
+    padding: 80px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+#final-cta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#final-cta h2 span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+#final-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#final-cta .btn-primary {
+    background-color: #fdd835;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-logo .logo {
+    color: #ffffff;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+.footer-logo .logo span {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fdd835; /* Color amarillo dorado */
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a img {
+    width: 30px;
+    transition: opacity 0.3s;
+}
+
+.footer-social a img:hover {
+    opacity: 0.7;
+}
+
+/* Estilos Responsivos */
+@media (min-width: 768px) {
+    .hero-content,
+    .intro-content,
+    .ar-demo-grid,
+    .pricing-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .steps,
+    .features-grid,
+    .themes-grid,
+    .testimonials-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .step,
+    .feature-item,
+    .theme-item,
+    .testimonial-item,
+    .pricing-item {
+        width: 30%;
+    }
+
+    .faq-accordion {
+        text-align: left;
+    }
+}
