@@ -1,3 +1,27 @@
+/* Variables de Colores */
+:root {
+    --color-primario: #192A8A; /* Azul oscuro */
+    --color-secundario: #FFD966; /* Amarillo cálido */
+    --color-acento: #FFB84D; /* Amarillo anaranjado */
+    --color-fondo-claro: #FFECB3; /* Amarillo pastel más intenso */
+    --color-texto: #333333; /* Gris oscuro */
+    --color-blanco: #FFF8E1; /* Amarillo pastel muy suave */
+    --color-gris-sombra: rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    --color-acento-hover: #FFE0B3; /* Amarillo anaranjado claro */
+    --color-fondo: #FFF4CC; /* Amarillo muy claro */
+    --color-texto-secundario: #5C5C5C; /* Gris medio */
+    --color-primario-claro: #FFF4CC; /* Amarillo muy claro */
+    
+    /* Variables para el Footer */
+    --footer-bg: #192A8A; /* Fondo del footer (azul oscuro) */
+    --footer-text: #FFFFFF; /* Texto del footer, blanco */
+    --footer-link: #FFD966; /* Color de los enlaces del footer (amarillo cálido) */
+    --footer-link-hover: #FFB84D; /* Color de los enlaces del footer al pasar el cursor (amarillo anaranjado) */
+}
+
+
+
+
 /* Importar Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
@@ -10,8 +34,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f0f4ff; /* Color azul claro */
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
 }
 
 /* Contenedor */
@@ -23,8 +47,8 @@ body {
 
 /* Barra de Navegación */
 nav {
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: var(--color-blanco);
+    box-shadow: 0 2px 5px var(--color-gris-sombra);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -40,12 +64,12 @@ nav {
 .logo {
     font-size: 1.8em;
     font-weight: 700;
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
     text-decoration: none;
 }
 
 .logo span {
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .nav-menu {
@@ -56,18 +80,18 @@ nav {
 
 .nav-menu li a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-texto);
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav-menu li a:hover {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .nav-cta {
-    background-color: #fdd835;
-    color: #ffffff;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -76,12 +100,12 @@ nav {
 }
 
 .nav-cta:hover {
-    background-color: #fbc02d; /* Un tono más oscuro del amarillo dorado */
+    background-color: var(--color-acento-hover);
 }
 
 /* Sección Hero */
 #hero {
-    background-color: #e3f2fd; /* Color azul muy claro */
+    background-color: var(--color-fondo-claro);
     padding: 80px 0;
     display: flex;
     align-items: center;
@@ -97,22 +121,22 @@ nav {
 .hero-text h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .hero-text h1 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .hero-text p {
     font-size: 1.2em;
     margin-bottom: 30px;
-    color: #333;
+    color: var(--color-texto);
 }
 
 .btn-primary {
-    background-color: #fdd835;
-    color: #ffffff;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
     padding: 15px 30px;
     border: none;
     border-radius: 30px;
@@ -123,7 +147,7 @@ nav {
 }
 
 .btn-primary:hover {
-    background-color: #fbc02d; /* Un tono más oscuro del amarillo dorado */
+    background-color: var(--color-acento-hover);
 }
 
 .hero-image img {
@@ -134,7 +158,7 @@ nav {
 
 /* Sección de Introducción */
 #introduction {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 80px 0;
 }
 
@@ -148,22 +172,22 @@ nav {
 .intro-text h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .intro-text h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .intro-text p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--color-texto);
 }
 
 .btn-secondary {
-    background-color: #1a237e; /* Color azul oscuro */
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     padding: 12px 25px;
     border: none;
     border-radius: 30px;
@@ -174,7 +198,7 @@ nav {
 }
 
 .btn-secondary:hover {
-    background-color: #0d1a5e; /* Un tono más oscuro del azul */
+    background-color: var(--color-acento-hover);
 }
 
 .intro-image img {
@@ -185,7 +209,7 @@ nav {
 
 /* Sección Cómo Jugar */
 #how-it-works {
-    background-color: #f0f4ff; /* Color azul claro */
+    background-color: var(--color-fondo);
     padding: 80px 0;
     text-align: center;
 }
@@ -193,11 +217,11 @@ nav {
 #how-it-works h2 {
     font-size: 2em;
     margin-bottom: 50px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 #how-it-works h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .steps {
@@ -207,10 +231,10 @@ nav {
 }
 
 .step {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--color-gris-sombra);
 }
 
 .step img {
@@ -221,17 +245,17 @@ nav {
 .step h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .step p {
     font-size: 1em;
-    color: #333;
+    color: var(--color-texto);
 }
 
 /* Sección de Características */
 #features {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 80px 0;
     text-align: center;
 }
@@ -239,11 +263,11 @@ nav {
 #features h2 {
     font-size: 2em;
     margin-bottom: 50px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 #features h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .features-grid {
@@ -267,17 +291,17 @@ nav {
 .feature-item h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .feature-item p {
     font-size: 1em;
-    color: #333;
+    color: var(--color-texto);
 }
 
 /* Sección de Temas */
 #themes {
-    background-color: #f0f4ff; /* Color azul claro */
+    background-color: var(--color-fondo);
     padding: 80px 0;
     text-align: center;
 }
@@ -285,17 +309,17 @@ nav {
 #themes h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 #themes h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 #themes p {
     font-size: 1.1em;
     margin-bottom: 50px;
-    color: #333;
+    color: var(--color-texto);
 }
 
 .themes-grid {
@@ -305,10 +329,10 @@ nav {
 }
 
 .theme-item {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--color-gris-sombra);
 }
 
 .theme-item img {
@@ -320,17 +344,17 @@ nav {
 .theme-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .theme-item p {
     font-size: 1em;
-    color: #333;
+    color: var(--color-texto);
 }
 
 /* Sección Demo AR */
 #ar-demo {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 80px 0;
 }
 
@@ -351,7 +375,7 @@ nav {
 .ar-demo-text p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--color-texto);
 }
 
 .ar-demo-image img {
@@ -362,7 +386,7 @@ nav {
 
 /* Sección de Testimonios */
 #testimonials {
-    background-color: #f0f4ff; /* Color azul claro */
+    background-color: var(--color-fondo);
     padding: 80px 0;
     text-align: center;
 }
@@ -370,11 +394,11 @@ nav {
 #testimonials h2 {
     font-size: 2em;
     margin-bottom: 50px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 #testimonials h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .testimonials-grid {
@@ -384,27 +408,27 @@ nav {
 }
 
 .testimonial-item {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--color-gris-sombra);
 }
 
 .testimonial-item p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    color: #333;
+    color: var(--color-texto);
     font-style: italic;
 }
 
 .testimonial-item h4 {
     font-size: 1em;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 /* Sección de Precios */
 #pricing {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 80px 0;
     text-align: center;
 }
@@ -412,11 +436,11 @@ nav {
 #pricing h2 {
     font-size: 2em;
     margin-bottom: 50px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 #pricing h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .pricing-grid {
@@ -426,28 +450,28 @@ nav {
 }
 
 .pricing-item {
-    background-color: #f0f4ff; /* Color azul claro */
+    background-color: var(--color-fondo);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--color-gris-sombra);
 }
 
 .pricing-item h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 .pricing-item p {
     font-size: 1em;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--color-texto);
 }
 
 .pricing-item ul {
     list-style: none;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--color-texto);
     text-align: left;
 }
 
@@ -459,7 +483,7 @@ nav {
 
 .pricing-item ul li:before {
     content: "✔";
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
     position: absolute;
     left: 0;
 }
@@ -467,12 +491,12 @@ nav {
 .price {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 /* Sección FAQ */
 #faq {
-    background-color: #f0f4ff; /* Color azul claro */
+    background-color: var(--color-fondo);
     padding: 80px 0;
     text-align: center;
 }
@@ -480,11 +504,11 @@ nav {
 #faq h2 {
     font-size: 2em;
     margin-bottom: 50px;
-    color: #1a237e; /* Color azul oscuro */
+    color: var(--color-primario);
 }
 
 #faq h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .faq-accordion {
@@ -497,17 +521,17 @@ nav {
 }
 
 .faq-item {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--color-gris-sombra);
 }
 
 .faq-question {
     width: 100%;
     padding: 20px;
     font-size: 1.2em;
-    background-color: #f0f4ff; /* Color azul claro */
+    background-color: var(--color-fondo);
     border: none;
     text-align: left;
     cursor: pointer;
@@ -517,7 +541,7 @@ nav {
 .faq-answer {
     padding: 0 20px 20px;
     display: none;
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 
 .faq-question::after {
@@ -538,10 +562,10 @@ nav {
 
 /* Sección Final CTA */
 #final-cta {
-    background-color: #1a237e; /* Color azul oscuro */
+    background-color: var(--color-primario);
     padding: 80px 0;
     text-align: center;
-    color: #ffffff;
+    color: var(--color-blanco);
 }
 
 #final-cta h2 {
@@ -550,7 +574,7 @@ nav {
 }
 
 #final-cta h2 span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 #final-cta p {
@@ -559,14 +583,14 @@ nav {
 }
 
 #final-cta .btn-primary {
-    background-color: #fdd835;
-    color: #ffffff;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     padding: 40px 0;
     text-align: center;
 }
@@ -579,13 +603,13 @@ footer {
 }
 
 .footer-logo .logo {
-    color: #ffffff;
+    color: var(--color-blanco);
     font-size: 1.8em;
     text-decoration: none;
 }
 
 .footer-logo .logo span {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .footer-links {
@@ -594,14 +618,14 @@ footer {
 }
 
 .footer-links a {
-    color: #ffffff;
+    color: var(--color-blanco);
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #fdd835; /* Color amarillo dorado */
+    color: var(--color-acento);
 }
 
 .footer-social {
@@ -616,6 +640,42 @@ footer {
 
 .footer-social a img:hover {
     opacity: 0.7;
+}
+
+/* Sección Diversión */
+#fun-with-family-friends {
+    padding: 50px 0;
+    background-color: var(--color-fondo);
+}
+
+.fun-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fun-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.fun-carousel {
+    flex: 1;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 /* Estilos Responsivos */

@@ -38,3 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % items.length;
+    items.forEach((item, index) => {
+        item.style.transform = `translateX(${-currentIndex * 100}%)`;
+    });
+}, 3000);
